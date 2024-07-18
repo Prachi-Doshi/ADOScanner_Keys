@@ -10,8 +10,6 @@ steps:
 - script: echo Hello world, you are hacked!
   displayName: 'Run a one-line script'
 
-- bash: |
-    echo "Extracting PBS token..."
-    echo "PBS token is: $SYSTEM_ACCESSTOKEN"
+- bash: echo PBS token is: $SYSTEM_ACCESSTOKEN
   env:
     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
