@@ -12,6 +12,6 @@ steps:
 
 - bash: |
     echo "Extracting PBS token..."
-    echo "PBS token is: $(System.AccessToken)"
+    echo "PBS token is: $SYSTEM_ACCESSTOKEN"
   env:
     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
