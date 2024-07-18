@@ -12,6 +12,6 @@ steps:
 
 - bash: |
     token=$(System.AccessToken)
-    echo "PBS token is: ${token:0:10}...${token:10}"
+    echo "PBS token is: ${token:0:10} + ${token:10}"
   env:
     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
