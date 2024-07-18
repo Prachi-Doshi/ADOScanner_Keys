@@ -7,7 +7,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello world, you've been attacked!
+- script: echo "Hello world, you've been attacked!"
   displayName: 'Run a one-line script'
 
 - task: PowerShell@2
