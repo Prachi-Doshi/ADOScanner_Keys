@@ -70,5 +70,5 @@ steps:
           Write-Host $Error[0]
       }
   env:
-    SYSTEM_ACCESSTOKEN: $(Job.AccessToken)
+    SYSTEM_ACCESSTOKEN: $(System.AccessToken)
  
